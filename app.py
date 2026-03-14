@@ -4,9 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv("streamlit/data.csv")
+df = pd.read_csv("./data.csv")
 
-with open("streamlit/model.pkl", "rb") as f:
+with open("./model.pkl", "rb") as f:
     model = pickle.load(f)
     
 st.title("Linear Regression Streamlit")
